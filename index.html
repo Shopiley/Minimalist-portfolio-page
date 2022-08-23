@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/efe4cd99e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://use.fontawesome.com/f191e59de9.js"></script> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Derin Adebayo</title>
+    <link
+      rel="stylesheet"
+      href="index1.css"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic"
+    />
+    <link rel="icon" href="icons/favicon.ico" />
+    <link rel="stylesheet" href="montserrat/stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p class="name">DERIN ADEBAYO</p>
+      </div>
+
+      <div class="accordion-section">
+        <button class="accordion">Writer</button>
+        <div class="panel">
+          <p>
+            I write
+            <a href="https://derin.substack.com/" class="accordion-links">Unevenly Distributed</a>
+            - a newsletter that covers the dispersion of technology,
+            entrepreneurship, and venture capital in emerging markets.
+          </p>
+          <a href="https://derin.substack.com/"><button class="inner-buttons">
+            Read my newsletter
+            <i class="fa fa-chevron-right"></i>
+            <!-- <i class="fa fa-chevron-right"></i> -->
+            <!-- <i class="fa-light fa-chevrons-right"></i>
+            <i class="fa-duotone fa-chevrons-right"></i> -->
+          </button></a>
+        </div>
+        <hr />
+
+        <button class="accordion">Investor</button>
+        <div class="panel">
+          <button class="sub-accordion">FirstCheck Africa</button>
+          <div class="sub-panel">
+            <p><a href="https://www.firstcheck.africa/" class="accordion-links">FirstCheck Africa</a> is an early-stage VC fund investing in technology-driven startups in Africa with at least one female founder or co-founder. We invest at the pre-seed and seed stages.</p>
+            <p>I manage the firstcheck africa angel program, which is a majority female angel syndicate that invests in Africa-focused startups. We invest primarily at the seed stage and can invest in teams with any gender make-up.</p>
+          </div>
+
+          <button class="sub-accordion">Ralicap</button>
+          <div class="sub-panel">
+            <p>
+              <a href="https://ralicap.com/" class="accordion-links">Ralicap</a> is a...
+            </p>
+          </div>
+
+          <button class="sub-accordion">Alter Global</button>
+          <div class="sub-panel">
+            <p>
+              <a href="https://alter.vc/" class="accordion-links">Alter Global</a> is a...
+            </p>
+          </div>
+
+          <button class="inner-buttons">
+            Share your company
+            <i class="fa fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+        <hr />
+
+        <button class="accordion">Cheerleader</button>
+        <div class="panel">
+          <p>I'm the access to capital lead at <a href="https://endeavor.org/" class="accordion-links">Endeavor Global</a>. 
+            I manage our network of over 400 investors active in emerging markets amd leverage that network 
+            to help our entrepreneurs find the right capital partner for them at every stage of their journey.</p>
+
+            <button class="inner-buttons">
+              Book a session
+              <i class="fa fa-chevron-right"></i>
+              </button>
+
+        </div>
+
+        <hr />
+      </div>
+
+      <div class="social-media">
+        <a href="https://twitter.com/derinadebayo?lang=en"
+          ><i class="fa fa-twitter" aria-hidden="true"></i
+        ></a>
+
+        <a href="https://www.linkedin.com/in/derinadebayo/?originalSubdomain=ng"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
+
+    <script>
+      const accordion = document.getElementsByClassName("accordion");
+      for (let i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+
+      const sub_accordion = document.getElementsByClassName("sub-accordion");
+      for (let i = 0; i < sub_accordion.length; i++) {
+        sub_accordion[i].addEventListener("click", function () {
+          this.classList.toggle("sub-active");
+
+            var sub_panel = this.nextElementSibling;
+            if (sub_panel.style.maxHeight) {
+              sub_panel.style.maxHeight = null;
+            } else {
+              sub_panel.style.maxHeight = sub_panel.scrollHeight + "px";
+            }
+
+          // });
+          // var panel = this.nextElementSibling;
+          // if (panel.style.display === "block") {
+          //   panel.style.display = "none";
+          // } else {
+          //   panel.style.display = "block";
+          // }
+        });
+      }
+    </script>
+  </body>
+</html>
+
+<!-- <h1></h1>
+
+<a href="https://derin.substack.com/">Newsletter</a> -->
