@@ -58,6 +58,7 @@ body{
     color: #FFFFFF;
     float: right;
     margin-left: 5px; 
+    transition: 0.4s;
 } 
 
 .active:after{
@@ -126,7 +127,7 @@ body{
     font-size: 15px;
     line-height: 25px;
     overflow: auto;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.4s ease-out;
 }
 
 .panel::-webkit-scrollbar{
@@ -152,7 +153,6 @@ hr{
 }
 
 .accordion-links{
-    text-decoration: none;
     color:  #FFFFFF;
 }
 
@@ -160,7 +160,7 @@ hr{
     color: black;
 }
 
-.inner-buttons{
+/* .inner-buttons{
     background-color: #e0e6e4;
     border-radius: 2px; 
     padding: 8px 18px;
@@ -170,7 +170,50 @@ hr{
     margin: 15px 0px 15px;
 }
 
-.fa-chevron-right{
-    color: black;
-    padding: 0 2px 0;
+.inner-buttons:hover{
+    background-color: #22494d;
+} */
+
+
+.inner-buttons {
+    background-color: #e0e6e4;
+  padding: 8px 18px;
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: 500;  
+  margin: 15px 0px 15px;
+text-align: center;
+padding: 8px 18px;
+width: 220px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 15px 0px 15px;
+box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+
 }
+
+.inner-buttons{
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.inner-buttons:after {
+content: '»';
+opacity: 0;  
+top: 14px;
+right: -20px;
+transition: 0.5s;
+}
+
+.inner-buttons:hover{
+padding-right: 24px;
+padding-left:8px;
+}
+
+.inner-buttons:hover:after {
+opacity: 1;
+right: 10px;
+}
+
