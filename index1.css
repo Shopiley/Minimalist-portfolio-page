@@ -65,9 +65,6 @@ body{
     content: '\02039';
     transform: rotate(90deg);
     float: right;
-    /* font-size: 28px;
-    color: #FFFFFF;
-    margin-left: 5px; */
 }
 
 .sub-accordion{
@@ -110,12 +107,12 @@ body{
     max-height: 0;
     color: #FFFFFF;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.4s ease-out;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /*Firefox*/
 }
 
-
+  
 .panel {
     /* position: relative; */
     padding: 0 18px;
