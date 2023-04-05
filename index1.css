@@ -6,7 +6,7 @@ body{
 .container{
     width: 100%;
     max-width: 620px;
-    margin: 120px auto 20px auto;
+    margin: 200px auto 20px auto;
 }
 
 .box{
@@ -17,6 +17,7 @@ body{
     border: 3px solid #FFFFFF;  
 }
 
+
 .name{
     font-family: 'Montserrat';
     font-weight: 500;
@@ -26,6 +27,8 @@ body{
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+
 
 .accordion{
     background-color: inherit;
@@ -89,11 +92,9 @@ body{
 
 .sub-accordion:before{
     content: '\002B';
-    /* content: '\02795'; */
     color: #FFFFFF;
     font-size: 25px;
     padding-right: 10px;
-    /* float: left; */
 }
 
 .sub-active:before{
@@ -114,7 +115,6 @@ body{
 
   
 .panel {
-    /* position: relative; */
     padding: 0 18px;
     left: 10px;
     max-height: 0;
@@ -133,9 +133,6 @@ body{
 
 hr{
     border: 1px solid #7E8180;
-    /* margin-top: -0.2px; */
-    /* width: 100;
-    margin-left: 0; */
 }
 
 .social-media{   
@@ -156,21 +153,6 @@ hr{
 .accordion-links:hover{
     color: black;
 }
-
-/* .inner-buttons{
-    background-color: #e0e6e4;
-    border-radius: 2px; 
-    padding: 8px 18px;
-    border: none;
-    font-family: 'Montserrat';
-    font-weight: 500;  
-    margin: 15px 0px 15px;
-}
-
-.inner-buttons:hover{
-    background-color: #22494d;
-} */
-
 
 .inner-buttons {
     background-color: #e0e6e4;
@@ -214,3 +196,16 @@ opacity: 1;
 right: 10px;
 }
 
+@media only screen and (max-width: 700px) {
+    .container{
+        max-width: 85vw;
+    }
+    .box{
+        height: 13vw;  
+        border: 3px solid #FFFFFF;
+    }
+
+    .name{
+        font-size: 5vw;
+    }
+}
