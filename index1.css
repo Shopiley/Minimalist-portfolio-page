@@ -176,6 +176,7 @@ cursor: pointer;
 display: inline-block;
 position: relative;
 transition: 0.5s;
+color: black;
 }
 
 .inner-buttons:after {
