@@ -47,7 +47,7 @@ body{
 }
 
 .accordion-section{
-    padding-top: 50px;
+    padding-top: 5vw;
 }
 
 .active, .accordion:hover {
@@ -208,4 +208,40 @@ right: 10px;
     .name{
         font-size: 5vw;
     }
+
+    .accordion{
+        font-size: 3vw;
+        padding: 2vw;
+    }
+
+    .accordion-section{
+        padding-top: 10vw;
+    }
+
+    .container{
+        margin: 150px auto 20px auto;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        max-width: 85vw;
+    }
+    .box{
+        height: 13vw;  
+        border: 3px solid #FFFFFF;
+    }
+
+    .name{
+        font-size: 5vw;
+    }
+
+    .accordion{
+        font-size: 4vw;
+    }
+
+    .container{
+        margin: 150px auto 20px auto;
+    }
+
 }
